@@ -31,12 +31,17 @@ Docker manages the storage location, but you control the name and lifecycle.
 Maps a specific host directory to a container directory.
 Gives direct access to the host filesystem.
 Requires absolute paths and doesn't integrate well with Docker's volume management.
-Differences Between Volume Types
-Feature	Anonymous Volume	Named Volume	Bind Mount
-Managed by Docker	Yes	Yes	No
-Data Sharing	No (usually)	Yes	Yes
-Flexibility	Minimal	High	High
-Path Control	Docker-defined path	Docker-defined path	User-specified absolute path
+
+# Differences Between Volume Types
+
+
+# Feature	      AnonymousVolume	NamedVolume	BindMount
+ManagedDocker	       Yes	          Yes	      No
+  Data Sharing	       No (usually)	Yes	      Yes
+  Flexibility	         Minimal	    High	    High
+PathControl	    Docker-defined-path	Docker-defined-path	User-specified-absolute-path
+
+
 Example: Using Volumes
 Let’s create an example where a named volume is used to persist database data.
 
