@@ -5,7 +5,8 @@
 It is a very common requirement to persist the data in a Docker container beyond the lifetime of the container. However, the file system
 of a Docker container is deleted/removed when the container dies. 
 
-#**Use Cases for Volumes**
+#Use Cases for Volumes
+
 Database Containers: Persist database files for backups and consistency.
 Web Applications: Share configuration files between multiple containers.
 Logging: Save logs outside the container for analysis.
